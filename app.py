@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)  # This allows your Pygame website to talk to this API
 
 # This points to the Stockfish file you downloaded
-STOCKFISH_PATH = os.path.join(os.path.dirname(__file__), "stockfish")
+STOCKFISH_PATH = os.path.join(os.path.dirname(__file__), "stockfish_bin")
 
 @app.route('/get-move', methods=['POST'])
 def get_move():
